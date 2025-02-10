@@ -1,0 +1,9 @@
+share:
+  username: "guest"
+  password: ""
+  server: "0.0.0.0"
+  port: 139
+  client: client
+  ntlmv2: true
+  share_name: 'share'
+  key: "woooM@lwareMoreM@lwareAndM@lware"

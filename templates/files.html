@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Download Files</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: black;
+        }
+        td {
+            color: darkgreen;
+        }
+        table {
+          max-width: 99%;
+        }
+        .table-container {
+        max-height: 80vh;
+        overflow-y: auto;
+       }
+    </style>
+  </head>
+  <body>
+    {% include "navbar.html" %}
+    <div class="table-container">
+      <h5 class="mt-5" style="font-style: italic; color: green;">Warning: Encrypted Malware Samples</h5>
+      <table class="table table-bordered table-hover mt-3">
+        <tbody>
+          {% for filename, filepath in samples.items() %}
+          <tr>
+            <td>{{ filename }}</td>
+            <td><a href="{{ url_for('download_file', filename=filename) }}" class="btn btn-success">Download</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
