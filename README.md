@@ -22,6 +22,11 @@ Deployment & Monitoring Overview
 
 ![web](https://github.com/user-attachments/assets/8a8098e0-c834-417c-af7d-dc9532ef6721)
 
+- In production
+
+![honeypot-sample](https://github.com/user-attachments/assets/a8787631-eccb-4a37-897b-771001d1c119) \
+
+
 - Data products
   
 [Malware Hashes](https://camas-sec-threatfeed.s3.us-west-2.amazonaws.com/hashes.txt) \
