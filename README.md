@@ -1,5 +1,5 @@
 # Aldrovanda
-A samba server honeypot
+A samba server honeypot with payload disarm and analysis capabilities
 
 ```
 docker build -t aldrovanda .
@@ -7,6 +7,7 @@ docker build -t aldrovanda .
 ```
 docker run -d -p 80:80 -p 139:139 -p 445:445 aldrovanda
 ```
+Deployment & Monitoring Overview
 
 ![aldrovanda_diagram](https://github.com/user-attachments/assets/a9230187-05da-4282-b6af-79e771cc785f)
 
@@ -20,3 +21,9 @@ docker run -d -p 80:80 -p 139:139 -p 445:445 aldrovanda
 - The web interface displays a listing of unique hashes, filenames and IP addresses The file listing allows for file retrieval.
 
 ![web](https://github.com/user-attachments/assets/8a8098e0-c834-417c-af7d-dc9532ef6721)
+
+- Data products
+  
+[Malware Hashes](https://camas-sec-threatfeed.s3.us-west-2.amazonaws.com/hashes.txt) \
+[Malware Data CSV](https://camas-sec-threatfeed.s3.us-west-2.amazonaws.com/hashes.csv) \
+[Malware Infrastructure Map](https://camas-sec-threatfeed.s3.us-west-2.amazonaws.com/malware.html)
