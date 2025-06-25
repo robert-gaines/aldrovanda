@@ -1,10 +1,14 @@
 # Aldrovanda
 A samba server honeypot
 
-
+```
 docker build -t aldrovanda .
-
+```
+```
 docker run -d -p 80:80 -p 139:139 -p 445:445 aldrovanda
+```
+
+![aldrovanda_diagram](https://github.com/user-attachments/assets/a9230187-05da-4282-b6af-79e771cc785f)
 
 - Files uploaded to the unauthenticated share are hashed, encrypted and relocated. The original file is deleted.
 - Encrypted files remain on the system and can be downloaded for later analysis.
